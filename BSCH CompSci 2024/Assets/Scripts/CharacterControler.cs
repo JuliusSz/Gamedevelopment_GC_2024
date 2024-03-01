@@ -24,7 +24,18 @@ public class CharacterControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("DoubleJump", secondaryJumpbool);
+        animator.SetBool("ground", isGrounded);
         animator.SetFloat("speed",Mathf.Abs(myRb.velocity.x));
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            animator.transform.localScale = new Vector3(-1,1,1);
+        }
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            animator.transform.localScale = new Vector3(1, 1, 1);
+        }
+
         if (Mathf.Abs(myRb.velocity.magnitude) < maxSpeed && Mathf.Abs(Input.GetAxis("Horizontal")) >= 0)
         {
             myRb.AddForce(new Vector2(acceleration * Input.GetAxis("Horizontal"),0), ForceMode2D.Force);
