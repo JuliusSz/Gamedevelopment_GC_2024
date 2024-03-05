@@ -2163,7 +2163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7774889120220956107, guid: 7094d8f3a0780a841a85b02da6782c53, type: 3}
       propertyPath: Jumpforce
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7774889120220956107, guid: 7094d8f3a0780a841a85b02da6782c53, type: 3}
       propertyPath: acceleration
@@ -2175,7 +2175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7774889120220956107, guid: 7094d8f3a0780a841a85b02da6782c53, type: 3}
       propertyPath: secondaryJumpforce
-      value: 7
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

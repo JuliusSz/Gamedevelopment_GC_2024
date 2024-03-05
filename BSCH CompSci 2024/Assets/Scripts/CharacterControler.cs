@@ -24,7 +24,6 @@ public class CharacterControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetBool("DoubleJump", secondaryJumpbool);
         animator.SetBool("ground", isGrounded);
         animator.SetFloat("speed",Mathf.Abs(myRb.velocity.x));
         if (Input.GetAxis("Horizontal") < 0)
@@ -47,10 +46,13 @@ public class CharacterControler : MonoBehaviour
             myRb.AddForce(new Vector2(0, Jumpforce), ForceMode2D.Impulse);
             StartCoroutine(secondaryJump());
         }
-
-        if (Input.GetButton("Jump")&& secondaryJumpbool && isGrounded == false)
+        
+        if (Input.GetButtonDown("Jump")&& secondaryJumpbool && isGrounded == false)
         {
-            myRb.AddForce(new Vector2(0, secondaryJumpforce), ForceMode2D.Force); 
+            myRb.AddForce(new Vector2(0, secondaryJumpforce), ForceMode2D.Impulse);
+            //animator.SetBool("DoubleJump", true);
+            animator.Play("DoubleJump");
+            secondaryJumpbool = false;
         }
     }
     public void OnTriggerExit2D(Collider2D other)
@@ -59,6 +61,7 @@ public class CharacterControler : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
+        //animator.SetBool("DoubleJump", false);
         isGrounded = true;
     }
     IEnumerator secondaryJump()
