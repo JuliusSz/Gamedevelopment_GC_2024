@@ -27,8 +27,5 @@ public class pickup : MonoBehaviour
             Instantiate(pickupEffect, transform.position,transform.rotation);
             Destroy(gameObject);
         }
-        
-
-
     }
 }
