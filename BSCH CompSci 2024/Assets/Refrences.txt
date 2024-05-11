@@ -1,0 +1,27 @@
+Refrences:
+
+
+
+2D Player Character: https://pixelfrog-assets.itch.io/pixel-adventure-2
+
+2D collectebles: https://pixelfrog-assets.itch.io/pixel-adventure-2
+
+2DTilemap: https://pixelfrog-assets.itch.io/pixel-adventure-1
+
+2DEnemie:https: //pixelfrog-assets.itch.io/pixel-adventure-1
+
+2D Trap: https://pixelfrog-assets.itch.io/pixel-adventure-1
+
+Csgo Mirage Map:https://www.pinterest.com/pin/421790321340148389/
+
+3D PlayerCharacter : https://sketchfab.com/3d-models/fdx54mtvuz28-finalbasemesh-38443afa8ecd461e83817fb02df162e9
+
+3D Enemy: https://www.mixamo.com/#/?page=1&type=Character
+
+Player and Enemy Animations: https://www.mixamo.com/#/?page=1&type=Motion%2CMotionPack
+
+Palm:https://sketchfab.com/3d-models/realistic-palm-tree-5-free-67dc5881b2ab44f98c4bc209ee9d26ee#download
+
+shotgun Asset: Selfmade
+
+
