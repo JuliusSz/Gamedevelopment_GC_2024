@@ -35,6 +35,18 @@ public class GameManagerScript : MonoBehaviour
     {
         playerScore += scoreval;
     }
+    public void Heal(float health)
+    {
+        if(playerHealth + health <= playerMaxHealth) 
+        {
+            playerHealth += health;
+        }
+        else
+        {
+            playerHealth = playerMaxHealth;
+        }
+
+    }
     public void updateSpawn(Transform nextSpawnPoint) 
     {
         playerSpawnpoint = nextSpawnPoint;
